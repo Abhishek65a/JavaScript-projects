@@ -1,0 +1,33 @@
+body{
+    background: linear-gradient(#82aedb,  rgb(238, 122, 122),rgb(148, 205, 148));
+    overflow: hidden;
+}
+
+button{
+    width: fit-content;
+    padding: 8px;
+    cursor: pointer;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    background: whitesmoke;
+}
+
+ button:hover{
+    background: rgba(0, 0, 0, 0.582);
+ }
+
+ .container{
+    border: 2px solid  black;
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .message{
+    border: 1px solid black;
+    background: whitesmoke;
+     
+ }
