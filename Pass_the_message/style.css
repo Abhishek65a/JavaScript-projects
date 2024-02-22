@@ -1,33 +1,54 @@
-body{
-    background: linear-gradient(#82aedb,  rgb(238, 122, 122),rgb(148, 205, 148));
-    overflow: hidden;
+body {
+  background: linear-gradient(#82aedb, rgb(238, 122, 122), rgb(148, 205, 148));
+  overflow: hidden;
 }
 
-button{
-    width: fit-content;
-    padding: 8px;
-    cursor: pointer;
-    border: 2px solid lightgray;
+button {
+  width: fit-content;
+  padding: 8px;
+  cursor: pointer;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  background: whitesmoke;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.582);
+}
+
+.container {
+  border: 2px solid black;
+  width: 95%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  border: 1px solid black;
+  background: whitesmoke;
+  border-radius: 5px;
+  width: 500px;
+  margin: auto;
+  height: auto;
+  padding: 0 20px;
+  box-shadow: 0px 2px 4px 0px black;
+}
+
+
+.message input{
+    width: 90%;
+    padding: 8px 0;
     border-radius: 5px;
-    background: whitesmoke;
+    border: 1px solid black;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
- button:hover{
-    background: rgba(0, 0, 0, 0.582);
- }
-
- .container{
-    border: 2px solid  black;
-    width: 95%;
-    height: 100vh;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
-
- .message{
-    border: 1px solid black;
-    background: whitesmoke;
-     
- }
+@media(max-width:480px){
+    .message input{
+        width: 82%;
+    }
+}
